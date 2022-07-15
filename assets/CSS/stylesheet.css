@@ -5,9 +5,47 @@
 
 * {
   box-sizing: border-box;
-  background-color: rgb(4, 24, 41);
+  /* background-color: rgb(4, 24, 41); */
   /* margin: 0; */
   padding: 0;
+}
+
+/*#bg-photo {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 20%;
+}
+
+#bg-photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}*/
+
+.bg-photo { 
+  background: url("../sunset.png"); 
+  /*background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: auto;
+  width: 100%;
+  min-width: 50%;
+  min-height: 50%;
+  overflow: hidden;
+  -webkit-background-size: cover;
+  -moz-backgroud-size: cover;
+  -o-background-size: cover; */
 }
 
 header {
@@ -17,6 +55,7 @@ header {
   margin: 50px 2px 0px 45px;
   width: 95%;
   background-color: rgb(199, 139, 65);
+  opacity: 1;
 }
 
 header .page-title {
@@ -96,11 +135,12 @@ nav ul li a:hover {
   color: mediumseagreen;
 }
 
-.background-photo {
-  height: 800px;
+/*.background-photo {
+  display: flex;
+  height: 1000px;
   width: 100%;
-  margin-bottom: 25px;
-  background-image: url(../images/919.jpg)
+  margin-bottom: 0;
+  background-image: url(../images/919.png);
   background-size: cover;
   background-position: center;
-}
+}*/
