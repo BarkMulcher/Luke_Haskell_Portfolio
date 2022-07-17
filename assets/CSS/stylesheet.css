@@ -6,60 +6,20 @@
 * {
   box-sizing: border-box;
   /* background-color: rgb(4, 24, 41); */
-  /* margin: 0; */
+  margin: 0;
   padding: 0;
 }
 
-/*#bg-photo {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 20%;
-}
-
-#bg-photo img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
-}*/
-
-.bg-photo { 
-  background: url("../sunset.png"); 
-  /*background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  height: auto;
-  width: 100%;
-  min-width: 50%;
-  min-height: 50%;
-  overflow: hidden;
-  -webkit-background-size: cover;
-  -moz-backgroud-size: cover;
-  -o-background-size: cover; */
-}
-
 header {
-  display: block;
-  border-radius: 15px;
-  border-bottom-left-radius: 40px;
-  margin: 50px 2px 0px 45px;
-  width: 95%;
-  background-color: rgb(199, 139, 65);
-  opacity: 1;
-}
+  background: url("../images/sunset.png") no-repeat center;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+} 
 
 header .page-title {
   border-radius: 5px;
+  border-bottom-left-radius: 45px;
   background-color: azure;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: oblique;
@@ -73,9 +33,10 @@ header .page-title {
 
 .page-subtitle {
   border-bottom-left-radius: 50px;
-  background-color: bisque;
+  background-color: rgb(50, 182, 138);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-left: 125px;
+  margin-top: 20px;
 }
 
 nav { 
@@ -135,12 +96,21 @@ nav ul li a:hover {
   color: mediumseagreen;
 }
 
-/*.background-photo {
-  display: flex;
-  height: 1000px;
-  width: 100%;
-  margin-bottom: 0;
-  background-image: url(../images/919.png);
+section div {
+  background-image: url("../images/DSC00075.JPG");
   background-size: cover;
-  background-position: center;
-}*/
+  background-position: left center;
+  border-top: 5px solid darkslateblue;
+}
+
+section img {
+  /* transform: scaleX(-1); */
+}
+
+.about img {
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 5px;
+  margin-top: 5px;
+  width: 300px;
+}
