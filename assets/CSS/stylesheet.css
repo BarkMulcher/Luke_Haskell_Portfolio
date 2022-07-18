@@ -14,7 +14,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: aliceblue;
-  /* height: auto; */
 }
 
 header {
@@ -204,6 +203,7 @@ ul figcaption {
 .contact-container {
   display: flex;
   flex-direction: column;
+  position: relative;
   background-color: teal;
   min-width: 100%;
   min-height: 100%;
@@ -212,12 +212,11 @@ ul figcaption {
   border-left: solid 15px;
   border-bottom: solid 15px;
   border-color: chocolate;
-  padding-bottom: 25px;
+  padding-bottom: 45px;
   border-bottom-left-radius: 15px;
 }
 
 .contact-container h2 {
-  display: flex;
   background-color: darkslategray;
   vertical-align: middle;
   height: 60px;
@@ -226,31 +225,69 @@ ul figcaption {
   line-height: 60px;
 }
 
-.contact-container ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 100%;
-  width: 100%;
-  /* text-align: center; */
+.column {
+  float: left;
+  width: 250px;
+  padding-left: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .contact-container ul li {
-  display: flex;
   list-style-type: none;
-  width: 20%;
   font-size: 1.3em;
 }
 
 .contact-container ul li a {
-  display: flex;
-  flex-wrap: nowrap;
+  display: block;
+  flex-wrap: wrap;
+  overflow: hidden;
   margin-bottom: 2px;
-  justify-content: flex-end;
+  justify-content: center;
   flex-direction: row;
   background-color: #0099cc;
+  border-bottom-left-radius: 15px;
   color: whitesmoke;
   text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 20%;
+  transition: .9s ease;
+}
+
+.contact-container:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 992px) {
+  .column {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -259,16 +296,28 @@ ul figcaption {
     flex-direction: column;
   }
 
+  footer ul li a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
   .about-container {
     font-size: .8em;
     max-width: 100%;
     min-width: 40%;
   }
+
+  .column {
+    width: 100%;
   }
+}
 
 @media screen and (max-width: 544px) {
-  .about-container {
+  .about-container,
+  .contact-container {
     font-size: .7em;
+    display: block;
   }
 
 }
