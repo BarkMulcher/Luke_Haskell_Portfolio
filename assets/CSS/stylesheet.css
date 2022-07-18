@@ -73,7 +73,6 @@ ul li {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  background-color: var(--clam);
   width: 150px;
   float: left;
   padding: 2px;
@@ -114,6 +113,7 @@ nav ul li a:hover {
   background-size: cover;
   background-position: left center;
   border-top: 10px solid gainsboro;
+  border-bottom-left-radius: 15px;
 }
 
 .about-container h2 {
@@ -124,7 +124,6 @@ nav ul li a:hover {
 .about-container p {
   display: flex;
   margin-left: 60px;
-  /* flex-wrap: nowrap; */
   font-size: 1.2em;
   font-weight: 700;
   color: var(--ltorange);
@@ -140,18 +139,19 @@ nav ul li a:hover {
 }
 
 section {
-  height: 100%;
+  height: auto;
 }
 
 .mywork-container {
+  display: flex;
+  flex-direction: column;
   background-color: teal;
   min-width: 100%;
   min-height: 100%;
   border-top: 10px solid gainsboro;
-  display: flex;
-  flex-direction: column;
   border-left: solid 15px;
   border-color: chocolate;
+  border-bottom-left-radius: 15px;
 }
 
 section div {
@@ -201,7 +201,57 @@ ul figcaption {
   font-weight: 500;
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  background-color: teal;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  border-top: 10px solid gainsboro;
+  border-left: solid 15px;
+  border-bottom: solid 15px;
+  border-color: chocolate;
+  padding-bottom: 25px;
+  border-bottom-left-radius: 15px;
+}
 
+.contact-container h2 {
+  display: flex;
+  background-color: darkslategray;
+  vertical-align: middle;
+  height: 60px;
+  color: black;
+  text-indent: 10px;
+  line-height: 60px;
+}
+
+.contact-container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  /* text-align: center; */
+}
+
+.contact-container ul li {
+  display: flex;
+  list-style-type: none;
+  width: 20%;
+  font-size: 1.3em;
+}
+
+.contact-container ul li a {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 2px;
+  justify-content: flex-end;
+  flex-direction: row;
+  background-color: #0099cc;
+  color: whitesmoke;
+  text-align: center;
+}
 
 @media screen and (max-width: 768px) {
   nav {
