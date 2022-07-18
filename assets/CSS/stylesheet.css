@@ -80,7 +80,7 @@ ul li {
   margin: 2px;
 }
 
-a {
+nav a {
   display: flex;
   flex-direction: column;
   border-radius: 2px;
@@ -105,20 +105,28 @@ nav ul li a:hover {
 
 .about-container {
   display: flex;
+  flex-direction: column;
   background-image: url("../images/DSC00075.JPG");
+  border-left: solid 15px;
+  border-color: chocolate;
   position: relative;
-  height: 400px;
+  height: 550px;
   background-size: cover;
   background-position: left center;
-  border-top: 5px solid darkslateblue;
+  border-top: 10px solid gainsboro;
+}
+
+.about-container h2 {
+  color: darkgray;
+  margin-left: 10px;
 }
 
 .about-container p {
   display: flex;
-  flex-wrap: nowrap;
+  margin-left: 60px;
+  /* flex-wrap: nowrap; */
   font-size: 1.2em;
   font-weight: 700;
-  margin-left: 20px;
   color: var(--ltorange);
 }
 
@@ -131,12 +139,54 @@ nav ul li a:hover {
   width: 150px;
 }
 
+section {
+  height: 960px;
+}
 
+.mywork-container {
+  background-color: teal;
+  min-width: 100%;
+  min-height: 100%;
+  border-top: 10px solid gainsboro;
+  display: flex;
+  flex-direction: column;
+  border-left: solid 15px;
+  border-color: chocolate;
+}
 
+section div {
+  background-color: darkslategray;
+  vertical-align: middle;
+  height: 60px;
+  color: black;
+  text-indent: 10px;
+  line-height: 60px;
+}
 
-/* .about h2 {
+section img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.refactor img {
+  display: flex;
+  margin-right: auto;
+  margin-top: 0;
+  width: 45%;
+  border-left: 7px solid;
+  border-left-color: indigo;
+}
+
+section h3 {
   margin-left: 150px;
-} */
+}
+
+.refactor figure {
+  background-color: indigo;
+  background-size: cover;
+  color: floralwhite;
+}
+
 
 @media screen and (max-width: 768px) {
   nav {
@@ -144,9 +194,16 @@ nav ul li a:hover {
     flex-direction: column;
   }
 
-  .about-container p {
+  .about-container {
     font-size: .8em;
     max-width: 100%;
     min-width: 40%;
   }
   }
+
+@media screen and (max-width: 544px) {
+  .about-container {
+    font-size: .7em;
+  }
+
+}
