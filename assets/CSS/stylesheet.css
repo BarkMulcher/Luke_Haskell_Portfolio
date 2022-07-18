@@ -140,7 +140,7 @@ nav ul li a:hover {
 }
 
 section {
-  height: 960px;
+  height: 100%;
 }
 
 .mywork-container {
@@ -168,24 +168,39 @@ section img {
   max-width: 100%;
 }
 
-.refactor img {
-  display: flex;
-  margin-right: auto;
-  margin-top: 0;
-  width: 45%;
-  border-left: 7px solid;
-  border-left-color: indigo;
-}
-
-section h3 {
+section ul {
   margin-left: 150px;
 }
 
 .refactor figure {
-  background-color: indigo;
-  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  width: 45%;
+  border-left: 7px solid;
+  border-left-color: indigo;
   color: floralwhite;
+  padding: 5px;
 }
+
+.portfolio figure,
+.placeholder figure {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  width: 75%;
+  color: floralwhite;
+  padding: 5px;
+  border-left: 7px solid;
+  border-left-color: indigo;
+}
+
+ul figcaption {
+  font-size: 1.3em;
+  font-style: oblique;
+  font-weight: 500;
+}
+
 
 
 @media screen and (max-width: 768px) {
