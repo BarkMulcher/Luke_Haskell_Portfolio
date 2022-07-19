@@ -21,9 +21,13 @@
 
 ### In the contact section, I created the responsive link elements several times before getting them to align how I wanted, and to respond correctly to window resizing.  
 
-### I ran into a real sticky, stressful mess when I went to live-deploy my page through github pages on the due date -- none of my inline HTML images were loading, at all! All images sourced with CSS load fine. At the time of writing, only my "About Me" image had loaded. At first, I thought it was due to a file path problem, as outlined on several stackoverflow threads and other sites. But I now think that there is a long delay with github deployment pages due to bandwidth concerns. In case the images don't load for the grader, my screenshot shows that they load from my HTML file. 
+### I ran into a real sticky, stressful mess when I went to live-deploy my page through github pages on the due date -- none of my inline HTML images were loading! All images sourced with CSS load fine. At the time of writing, only my "About Me" image had loaded. At first, I thought it was due to a file path problem, as outlined on several stackoverflow threads and other sites. But I now think that there is a long delay with github deployment pages due to bandwidth concerns. In case the images don't load for the grader, my screenshot shows that they load from my HTML file. I changed all image paths to match.
 
 ### Anyhow, I hope that by the time of grading, the "My Work" section shows images.
+
+### Website screenshot: https://github.com/BarkMulcher/Luke_Haskell_Portfolio/blob/main/assets/images/mod2ss.png
+
+### Deployed GitHub link: https://barkmulcher.github.io/Luke_Haskell_Portfolio/
 
 ---------------------
 
