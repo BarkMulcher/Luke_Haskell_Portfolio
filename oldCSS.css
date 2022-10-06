@@ -1,0 +1,329 @@
+:root {
+    --clam: rgb(133, 133, 189);
+    --ltorange: rgb(199, 139, 65);
+  }
+  
+  .navbar {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+  }
+  
+  header {
+    background: url("../images/sunset.png") no-repeat center;
+    background-size: cover;
+    height: 800px;
+    position: relative;
+  } 
+  
+  header .page-title {
+    border-radius: 5px;
+    border-bottom-left-radius: 45px;
+    background-color: azure;
+    font-style: oblique;
+    margin-left: 85px;
+    padding-left: 40px;
+    text-align: left;
+  }
+  
+  .subtitle-container {
+    border-bottom-left-radius: 75px;
+    height: 50px;
+    background-color: rgb(50, 182, 138);
+    margin-left: 125px;
+    margin-top: 20px;
+    padding: 0px; 
+    text-align: right; 
+    font-style: oblique;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .page-subtitle {
+    margin-right: 10px;
+  }
+  
+  nav { 
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 100%; 
+  } 
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    background-color: var(--clam);
+    text-align: center;
+    overflow: hidden;
+    margin-left: 25%;
+    padding-left: 75px;
+    border-bottom-left-radius: 50px;
+  }
+  
+  ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 150px;
+    float: left;
+    padding: 2px;
+    margin: 2px;
+  }
+  
+  nav a {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    text-decoration: none;
+    border-style: double;
+    margin: 2px;
+    padding: 2px;
+  }
+  
+  a:link {
+    color: midnightblue;
+  }
+  
+  nav ul li a:visited {
+    color: beige;
+  }
+  
+  nav ul li a:hover {
+    background-color: lightgray;
+    color: mediumseagreen;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/DSC00075.JPG");
+    border-left: solid 15px;
+    border-color: chocolate;
+    position: relative;
+    height: 550px;
+    background-size: cover;
+    background-position: left center;
+    border-top: 10px solid gainsboro;
+    border-bottom-left-radius: 15px;
+  }
+  
+  .about-container h2 {
+    color: darkgray;
+    margin-left: 10px;
+  }
+  
+  .about-container p {
+    display: flex;
+    margin-left: 60px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--ltorange);
+  }
+  
+  .about-container img {
+    border: 2px solid;
+    float: left;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: 5px;
+    width: 150px;
+  }
+  
+  section {
+    height: auto;
+  }
+  
+  .mywork-container {
+    display: flex;
+    flex-direction: column;
+    background-color: teal;
+    min-width: 100%;
+    min-height: 100%;
+    border-top: 10px solid gainsboro;
+    border-left: solid 15px;
+    border-color: chocolate;
+    border-bottom-left-radius: 15px;
+  }
+  
+  section div {
+    background-color: darkslategray;
+    vertical-align: middle;
+    height: 60px;
+    color: black;
+    text-indent: 10px;
+    line-height: 60px;
+  }
+  
+  section img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  
+  section ul {
+    margin-left: 150px;
+  }
+  
+  .refactor figure {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    width: 45%;
+    border-left: 7px solid;
+    border-left-color: indigo;
+    color: floralwhite;
+    padding: 5px;
+  }
+  
+  .portfolio figure,
+  .placeholder figure {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 75%;
+    color: floralwhite;
+    padding: 5px;
+    border-left: 7px solid;
+    border-left-color: indigo;
+  }
+  
+  ul figcaption {
+    font-size: 1.3em;
+    font-style: oblique;
+    font-weight: 500;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: teal;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    border-top: 10px solid gainsboro;
+    border-left: solid 15px;
+    border-bottom: solid 15px;
+    border-color: chocolate;
+    padding-bottom: 45px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  .contact-container h2 {
+    background-color: darkslategray;
+    vertical-align: middle;
+    height: 60px;
+    color: black;
+    text-indent: 10px;
+    line-height: 60px;
+  }
+  
+  .column {
+    float: left;
+    width: 250px;
+    padding-left: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .contact-container ul li {
+    list-style-type: none;
+    font-size: 1.3em;
+  }
+  
+  .contact-container ul li a {
+    display: block;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 2px;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #0099cc;
+    border-bottom-left-radius: 15px;
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 20%;
+    transition: .9s ease;
+  }
+  
+  .contact-container:hover .overlay {
+    width: 100%;
+    left: 0;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  
+  @media screen and (max-width: 992px) {
+    .column {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    footer ul li a {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .about-container {
+      font-size: .8em;
+      max-width: 100%;
+      min-width: 40%;
+    }
+  
+    .column {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 544px) {
+    .about-container,
+    .contact-container {
+      font-size: .7em;
+      display: block;
+    }
+  
+  }
