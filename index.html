@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/CSS/stylesheet.scss">
+    <link rel="stylesheet" type="text/css" href="assets/CSS/stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,142 +15,133 @@
 <body>
 
 
-    <section class="hero is-fullheight-with-navbar has-background">
-        <img class="hero-background" src="./assets/images/sunset.png">
-        <div class="hero-head">
-            <nav class="navbar is-fixed-top is-primary" role="navigation" aria-label="main navigation">
-                <div class="container">
-                    <span class="navbar-burger" data-target="navbarMenuHeroA">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                    <div id="navbarMenuHeroA" class="navbar-menu">
-                        <div class="navbar-end is-size-4 is-family-code">
-                            <a class="navbar-item is-active has-text-dark mx-1" href="#about">
-                                About Me
+    <section class="hero">
+        <nav class="navbar is-fixed-top is-primary" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <!-- <span class="navbar-burger" data-target="navbarMenuHeroA">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>  -->
+                <div id="navbarMenuHeroA" class="navbar-menu">
+                    <div class="navbar-end is-size-4 is-family-code">
+                        <a class="navbar-item is-active has-text-dark mx-1" href="#about">
+                            About Me
+                        </a>
+                        <a class="navbar-item is-active has-dark-text mx-1" href="#mywork">
+                            My Work
+                        </a>
+                        <a class="navbar-item is-active has-dark-text mx-1" href="#contact">
+                            Reach Out
+                        </a>
+                        <a class="navbar-item is-active has-dark-text mx-1" href="#resume">
+                            Resume
+                        </a>
+                        <span class="navbar-item">
+                            <a class="fab fa-github is-active has-dark-text mx-1" href="https://github.com/BarkMulcher">
+                                <span>GitHub</span>
                             </a>
-                            <a class="navbar-item is-active has-dark-text mx-1" href="#mywork">
-                                My Work
-                            </a>
-                            <a class="navbar-item is-active has-dark-text mx-1" href="#contact">
-                                Reach Out
-                            </a>
-                            <a class="navbar-item is-active has-dark-text mx-1" href="#resume">
-                                Resume
-                            </a>
-                            <span class="navbar-item">
-                                <a class="fab fa-github is-active has-dark-text mx-1" href="https://github.com/BarkMulcher">
-                                    <span>GitHub</span>
-                                </a>
-                            </span>
-                        </div>
+                        </span>
                     </div>
                 </div>
-            </nav>
-        </div>
-
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <p class="title">
-                    Lucas Haskell
-                </p>
-                <p class="subtitle">
-                    Web Developer
-                </p>
             </div>
+        </nav>
+        <div class="hero-inner">
+            <h1>Lucas Haskell</h1>
+            <h3>Web Developer</h3>
         </div>
-
     </section>
 
 
 
 
-        <main class="content">
+    <main>
 
-            <article id="about" class="about-container">
-                <figure>
-                    <!-- <img class="is-128x128" src="./assets/images/captain-luke.jpg" alt="driving a boat"> -->
-                </figure>
-                <h2 class="about">
-                    About me:
-                </h2>
-                <p>
-                    Hello, my name is Lucas Haskell. I have an intense love for learning new things, and have extended
-                    this passion to web development. During and after some time in the military, I traveled all around the
-                    world, and I believe that experience and perspective is of great benefit. I spent eight years in the 
-                    semiconductor manufacturing field, an industry whose existence relies on the innovation and implementation
-                    of the world's most cutting-edge technology.
-                    My experience in that realm is what led me to continue my personal growth in web development. The dedication 
-                    required in that role remains with me today, and will shine through the continuous improvement of my new craft.
+        <div class="card">
+            <header class="card-header">
+                <div class="card-image">
+                    <figure class="image is-rounded is-128x128">
+                        <img src="./assets/images/captain-luke.jpg" alt="driving a boat">
+                    </figure>
+                </div>
+            </header>
+            <div class="card-content">
+                <p class="card-header-title">
+                    About Me
                 </p>
-                
-            </article>
+                    Hello, my name is Lucas Haskell. I have an intense love for learning new things, and have extended
+                    this passion to web development. During and after some time in the military, I trotted the globe,
+                    and I believe that experience and perspective is of great benefit. I spent eight years in the
+                    semiconductor manufacturing field, an industry whose existence relies on the innovation and
+                    implementation
+                    of the world's most cutting-edge technology. My experience in that realm is what led me to continue
+                    my
+                    personal growth in web development. The dedication required in that role remains with me,
+                    and shines through to my new craft.
+            </div>
 
-            <section id="MyWork" class="mywork-container">
-                <div class="mywork-header">
+        </div>
+
+        <section id="MyWork" class="mywork-container">
+            <div class="mywork-header">
+                <h2>
+                    My Work
+                </h2>
+            </div>
+            <ul>
+                <a class="project2" href="https://serene-shelf-90086.herokuapp.com" target="_blank"
+                    rel="noreferrer noopener">
+                    <figure>
+                        <img src="./assets/images/pj2homepageScreenshot.jpg" alt="project2img">
+                        <figcaption>
+                            INDEX MORI Student Group Project
+                            <br>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a class="refactor" href="https://barkmulcher.github.io/Horiseon-Refactor-Project_7.11.22/"
+                    target="_blank" rel="noreferrer noopener">
+                    <figure>
+                        <img src="./assets/images/horiseon.JPG" alt="techie meeting">
+                        <figcaption>
+                            Re-Factoring HORISEON Website
+                            <br>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a class="cat-api" href="https://heatleyj7.github.io/cat-api-project/" target="_blank"
+                    rel="noreferrer noopener">
+                    <figure>
+                        <img src="./assets/images/catapi.png" alt="cat banner">
+                        <figcaption>
+                            CAT API Project
+                        </figcaption>
+                    </figure>
+                </a>
+                <a class="placeholder">
+                    <figure>
+                        <img src="./assets/images/another-amazing-example.png" alt="placeholder">
+                        <figcaption>
+                            And MORE
+                        </figcaption>
+                    </figure>
+                </a>
+            </ul>
+
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="content has-text-centered">
+
+            <div class="text">Thank You For Visiting!</div>
+            <div class="columns">
+                <div class="column">
                     <h2>
-                        My Work
+                        Contact Me
                     </h2>
                 </div>
-                <ul>
-                    <a class="project2" href="https://serene-shelf-90086.herokuapp.com"
-                        target="_blank" rel="noreferrer noopener">
-                        <figure>
-                            <img src="./assets/images/pj2homepageScreenshot.jpg" alt="project2img">
-                            <figcaption>
-                                INDEX MORI Student Group Project
-                                <br>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a class="refactor" href="https://barkmulcher.github.io/Horiseon-Refactor-Project_7.11.22/"
-                        target="_blank" rel="noreferrer noopener">
-                        <figure>
-                            <img src="./assets/images/horiseon.JPG" alt="techie meeting">
-                            <figcaption>
-                                Re-Factoring HORISEON Website
-                                <br>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a class="portfolio" href="https://github.com/BarkMulcher/Luke_Haskell_Portfolio.git"
-                        target="_blank" rel="noreferrer noopener">
-                        <figure>
-                            <img src="./assets/images/portfolio-header.JPG" alt="portfolio website">
-                            <figcaption>
-                                My Portfolio website
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a class="cat-api" href="https://heatleyj7.github.io/cat-api-project/" target="_blank"
-                        rel="noreferrer noopener">
-                        <figure>
-                            <img src="./assets/images/catapi.png" alt="cat banner">
-                            <figcaption>
-                                CAT API Project
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a class="placeholder">
-                        <figure>
-                            <img src="./assets/images/another-amazing-example.png" alt="placeholder">
-                            <figcaption>
-                                And MORE
-                            </figcaption>
-                        </figure>
-                    </a>
-                </ul>
-
-            </section>
-        </main>
-
-        <footer id="contact" class="contact-container">
-            <h2>
-                Contact Me
-            </h2>
-            <div class="overlay">
-                <div class="text">Thank You For Visiting!</div>
             </div>
             <ul class="row">
                 <li class="column">
@@ -172,7 +163,8 @@
                         target="_blank" rel="noreferrer noopener">Resume</a>
                 </li>
             </ul>
-        </footer>
+        </div>
+    </footer>
 
 </body>
 
@@ -180,6 +172,43 @@
 
 
 </html>
+
+
+<!-- <section class="hero is-fullheight-with-navbar has-background">
+    <img class="hero-background" src="./assets/images/sunset.png">
+<div class="hero-head">
+    <nav class="navbar is-fixed-top is-primary" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <span class="navbar-burger" data-target="navbarMenuHeroA">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span> 
+            <div id="navbarMenuHeroA" class="navbar-menu">
+                <div class="navbar-end is-size-4 is-family-code">
+                    <a class="navbar-item is-active has-text-dark mx-1" href="#about">
+                        About Me
+                    </a>
+                    <a class="navbar-item is-active has-dark-text mx-1" href="#mywork">
+                        My Work
+                    </a>
+                    <a class="navbar-item is-active has-dark-text mx-1" href="#contact">
+                        Reach Out
+                    </a>
+                    <a class="navbar-item is-active has-dark-text mx-1" href="#resume">
+                        Resume
+                    </a>
+                    <span class="navbar-item">
+                        <a class="fab fa-github is-active has-dark-text mx-1"
+                            href="https://github.com/BarkMulcher">
+                            <span>GitHub</span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div> -->
 
 <!-- <div class="hero-body">
             <h1 class="title">

@@ -1,3 +1,32 @@
-.title {
-  z-index: 5;
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.hero {
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
+   
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* text styles */
+  text-align: center;
+
+  /* background styles*/
+  background-image: url(/assets/images/sunset.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.hero-inner {
+  padding-top: 10rem;
+  font-size: 3em;
 }
